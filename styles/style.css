@@ -301,7 +301,7 @@ strong {
 
 .service {
   margin-bottom: 2.5em;
-  padding: .15em;
+  margin-inline: .5em;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
