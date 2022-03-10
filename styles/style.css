@@ -301,8 +301,9 @@ strong {
 
 .service {
   margin-bottom: 2.5em;
-  box-shadow: var(--bs-secondary);
   padding: .15em;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 .section__title--services {
@@ -386,6 +387,7 @@ strong {
 }
 
 .about__img {
+  margin-inline: auto;
     border-radius: 2px;
     width: 244px;
     height: 406px;
@@ -460,7 +462,7 @@ strong {
 
 @media (min-width: 800px) {
   .cover__img {
-    width: 700px;
+    width: 650px;
   }
 }
 
@@ -504,7 +506,7 @@ strong {
 }
 
 .project__item {
-    padding: .75em .5em;
+    padding: .75em .75em;
 }
 
 .project__img {
