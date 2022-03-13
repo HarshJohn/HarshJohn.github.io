@@ -227,7 +227,7 @@ main {
 
 /* sections */
 
-main section {
+main .section {
   padding: 5em 2em;
 }
 
