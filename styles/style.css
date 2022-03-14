@@ -343,6 +343,11 @@ strong {
     max-width: 1000px;
     margin: 0 auto;
   }
+
+  .service {
+    padding: 1em;
+  }
+
   .service + .service {
     margin-left: 1em;
   }
