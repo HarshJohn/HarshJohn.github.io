@@ -1,239 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="styles/style.css">
+    <!-- bootstrap style-sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-  <script src="https://kit.fontawesome.com/f1ac6635cd.js" crossorigin="anonymous"></script>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/f1ac6635cd.js" crossorigin="anonymous"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
 
-  <title>Harsh John Portfolio</title>
+    <!-- local styles -->
+    <link rel="stylesheet" href="/styles/shared.css">
+    <link rel="stylesheet" href="/styles/index.css">
+
+    <!-- title -->
+    <title>Harsh John</title>
 </head>
-
 <body>
+    <section class="body">
+    <!-- nav -->
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"><img class="logo-img
+        " src="/images/Harsh-in-red.jpg" alt="harsh in red as a logo"></a>
 
-  <header id="header">
-    <section class="header__style">
-      <section class="logo-section">
-        <a href="#welcome-section" class="logo__link">
-          <div class="logo">&lt; <span class="logo__style"> |</span>Dev_Harsh&gt;</div>
-        </a>
-      </section>
-      <input type="checkbox" id="nav__toggle" class="header__button nav__toggle">
-
-      <label for="nav__toggle" class="nav__toggle--label">
-        <span></span>
-      </label>
-
-      <nav id="navbar" class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#welcome-section" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resume
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/resume.html">Visit Resume/About Page</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://drive.google.com/file/d/14wPKVEm11PkCY-4PzqkMqyh-vtKJbHGq/view?usp=sharing" target="_blank">Direct Download Resume</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#project">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#hiring">Hiring</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </section>
-  </header>
+    <!-- header -->
+    <!-- my picture and a small introduction about me -->
+    <header id="home" class="container">
+        <section class="header__section--head">            
+        <div class="header__img--container">
+            <img class="header-img opacity-100" src="/images/Harsh-in-red.jpg" alt="">
+        </div>
+        
+        <div class="container px-5 header__div--head">
+            <h1 class="header__div--title text-center text-black"><span class="header__div--h1-span-block"><span class="style__first--latter">H</span>ello, </span>I'm Harshu</h1>
+            <p class="header__div--subtitle text-center text-capitalize text-secondary">
+                I'm a self-taught Frontend focused Web Developer building the Frontend of the Websites and make them look great.
+            </p>
+            <div class="header__div--btn text-center mt-3 mb-3">
+                <a href="#project" class="text-decoration-none text-black bg-warning px-5 py-3">Projects</a>
+            </div>
+        </div>
+        </section>
+      </header>
 
-  <main id="main-doc">
+    <!-- main -->
+      <main class="container mt-5 my-2 p-2 mb-0">
+          <!-- social icons, hidden. Only appears when width is more than 992px -->
+          <div class="footer__div--social-icons-fixed">
+            <ul class="social-list">
+            <li class="social-list__item"><a id="profile-link" target="_blank" href="https://github.com/HarshJohn" class="social-list__link"><i class="fa-brands fa-github"></i></a></li>
+      
+            <li class="social-list__item"><a href="https://www.freecodecamp.org/HarshJ_ohn" class="social-list__link" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a></li>
+      
+            <li class="social-list__item"><a href="https://twitter.com/harshj_ohn" class="social-list__link" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+      
+            <li class="social-list__item"><a href="https://www.linkedin.com/in/harsh-john-105904234/?trk=public_profile_samename-profile&originalSubdomain=in" class="social-list__link" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      
+            <li class="social-list__item">
+              <a href="https://wa.me/+918085837063" class="social-list__link" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+          </ul>
+      </div>
+      
+          <!-- About Me -->
+          <section class="container my-3 d-md-grid">
+              <h2 id="about" class="text-center">About Me</h2>
+              <p class="text-center about--general text-secondary">Here you will find few things about me, what I do, and my current skills mostly in terms of programming and technology.</p>
 
-    <!-- Introduction -->
-    <section class="intro section" id="welcome-section">
-      <section class="my-intro">
-        <h1 class="section__title section__title--intro">
-          Hi, I am <strong>Harsh John</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">self taught front-end dev</p>
-        <img class="intro__img" src="images/Me.jpg" alt="picture of Harsh John smiling">
-      </section>
-    </section>
+              <!-- grid started -->
+              <div class="row main__div">
+                  <div class="about__me--containers col-md-6 container">
+                      <h3 class="container fs-5">Get to know me!</h3>
 
-    <!-- My Services -->
-    <section id="services" class="my-services section">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>Criticize the web-design</h3>
-          <p>I will criticize your web design and make it look better.</p>
-        </div> <!-- / service -->
-        <div class="service">
-          <h3>Single as well as Multiple Page Website</h3>
-          <p>I will create single page as well as multiple page WebSite.</p>
-          <p>I think multiple page websites look better than single page website, even thought this is a single page portfolio.
-        </div> <!-- / service -->
-        <div class="service">
-          <h3>Fixing the bugs</h3>
-          <p>I will fix the bug in your website code, and try to solve the issues that may be troubling you.</p>
-        </div> <!-- / service -->
-        <div class="service">
-          <h3>Make your website responsive</h3>
-          <p>I will make your website responsive, this portfolio is perfect example of a responsive website.</p>
-        </div> <!-- / service -->
-        <div class="service">
-          <h3>Adding new design features, redesign your website</h3>
-          <p>I can create design or feature of many kind for your website on your demand.</p>
-        </div> <!-- / service -->
-        <div class="service">
-          <h3>PSD, XD, figma, Sketch to HTML</h3>
-          <p>I will write HTML and CSS code w.r.t. the document you will provide. This portfolio represents my skills.</p>
-        </div> <!-- / service -->
-        <div class="service">
-          <h3>Clean and hand coded</h3>
-          <p>Clean code is as important as O2 for humans to survive.</p>
-          <p>Check out the code of this page on this <strong><a class="my-services__services__service__link" href="https://github.com/HarshJohn/HarshJohn.github.io.git" target="_blank">Git-Repository</a></strong>.</p>
-        </div> <!-- / service -->
-        <div class="service">
-          <h3>Basic CSS animations</h3>
-          <p>I can create some basic animations for your website. Animations can make any website look awesome.</p>
-        </div> <!-- / service -->
-      </div> <!-- / services -->
+                      <div class="container text-secondary">
+                          I'm a <span class="div__span--darker-color">Self-Taught Frontend Web Developer</span> during the Day & a <span class="div__span--darker-color">Campfire Guitarist in the Night!</span>
+                          <br>
+                          I love building Front-end of the Websites. Check out some of my work in the <span class="div__span--darker-color">Project</span> Section.
+                          <br>
+                          When I am building something new, I usually learn something in the process.
+                          <br>
+                          Over the period of teaching myself, I've faced many challenges where I didn't knew what to do.
+                          <br>
+                          I found the perfect solution: <strong>LEARN it!</strong>
+                          <br>
+                          This website is a way for me to chronicle these lessons and ideas.
+                          <br>
+                          <br>
+                          I'm open to <span class="div__span--darker-color">Job</span> opportunities where I can contribute, learn and grow.
+                          <br>
+                          If you've a good opportunity that matches my skills and experience, then don't hesitate to contact me.
+                      </div>
+                      
+                  </div>
 
-      <a href="#work" class="btn service__btn">My Work</a>
-    </section>
+                  <div class="about__me--containers col-md-6 container">
+                    <h3 class="container fs-5">My Skills</h3>
 
-    <!-- About Me -->
-    <section class="about-me section" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Designer and Developer from Damoh, INDIA
-      </p>
+                    <div class="skills container d-flex flex-wrap mt-4">
+                        <div class="skill px-3 py-1 mb-3 mr-3 rounded">HTML</div>
+                        <div class="skill px-3 py-1 mb-3 mr-3 rounded">CSS</div>
+                        <div class="skill px-3 py-1 mb-3 mr-3 rounded">Bootstrap</div>
+                        <div class="skill px-3 py-1 mb-3 mr-3 rounded">Responsive Design</div>
+                        <div class="skill px-3 py-1 mb-3 mr-3 rounded">Git</div>
+                        <div class="skill px-3 py-1 mb-3 mr-3 rounded">GitHub</div>
+                        <div class="skill px-3 py-1 mb-3 mr-3 rounded">Grid</div>
+                        <div class="skill px-3 py-1 mb-3 mr-3 rounded">Flexbox</div>
+                        <div class="skill px-3 py-1 mb-3 mr-3 rounded">Terminal Basics</div>
+                    </div>
 
-      <img class="about__img" src="images/me2.png" alt="Picture of Harsh John playing a Guitar">
+                  </div>
+                </div>
+            </section>
 
-      <div class="about-me__body">
-          <h3>Hi, I am Harsh, Nice to meet you</h3>
-        <p>I am a self taught Web-Developer.</p>
-        <p>I currently am working as a freelance Developer.</p>
-        <p>Ready to work, learn and display the skills that I have acquired over the period of time.</p>
-        <p>I like coding from scratch, and enjoy bringing ideas to life in the browser.</p>
-        <p>I value simple & structure content, clean design patterns, and thoughtful interactions.</p>
-      </div>  
+            <!-- Projects -->
+            <section class="container mt-5 my-2 p-2">
+              <h2 id="project" class="text-center">My Projects</h2>
 
-    </section>
+              <p class="text-center about--general text-secondary">Here you'll find some of the <span class="div__span--darker-color">Projects</span> that I created. Each project containing it's own challenges.</p>
 
-    <div class="cover__img">
-        <img src="images/Screenshot 2022-03-05 at 17-51-08 Matt Farley.jpg" alt="Image for decoration purpose">
+              <div class="main__div main__div--project-container justify-content-around">
+
+              <div class=" container-fluid my-4 card-border-radius shadow text-center">
+                      <div class="container div__project--width">
+                          <img src="/images/project-images/desktop-view/Screenshot 2022-03-31 at 23-42-43 Harsh John Portfolio.png" class="rounded mx-auto d-block project-item shadow" alt="Project Item 1">
+                      </div>
+                      <div class="container div__project--width">
+                <h4 class="project__div--title fs-5 text-dark">
+                    My First Portfolio
+                </h4>
+                <p class="project__div--description text-secondary">
+                    This project was the part of <a href="https://www.kevinpowell.co/" class="div__span--darker-color"><q>Kevin Powel's</q></a> portfolio making course. He presented the portfolio in .xd form and I just loved it. I had to make it. I tried, took help along the way & results were amazing.
+                </p>
+            <a href="/projects/project1.html" class="project__div--btn shadow">More Details</a>
+        </div>
     </div>
 
-    <!-- My work -->
-    <section class="my-work section" id="work">
-      <h2 class="section__title section__title--work">My Recent Work</h2>
-      <p class="section__subtitle section__subtitle--work">Here are a few design projects I've worked on recently.</p>
-      <p class="section__subtitle--work2">Want to work with me? <a href="workharshjohn@gmail.com" class="email__link--projects">Email me</a>.</p>
-      <project id="projects" class="projects">
-        <!-- project item 01 -->
-        <div class="project__item project-tile">
-          <a href="https://infallible-banach-7fa370.netlify.app/" target="_blank">
-            <img class="project__img" src="images/Screen Shot 2022-03-14 at 01.10.25.png" alt="HTML CSS Basic Summary Website">
-          </a>
-        </div>
+              <div class=" container-fluid my-4 card-border-radius shadow text-center">
+                      <div class="container div__project--width">
+                          <img src="/images/project-images/desktop-view/Screenshot 2022-03-31 at 20-50-36 Travel Goals.png" class="rounded mx-auto d-block project-item shadow" alt="Project Item 2">
+                      </div>
+                      <div class="container div__project--width">
+                        <h4 class="project__div--title fs-5 text-dark">
+                          Travel Goal Project
+                        </h4>
+                        <p class="project__div--description text-secondary">
+                            This project was a part of a course I took from <a href="udemy.com/" class="div__span--darker-color"><q>Udemy</q></a>.
+                        </p>
+                    <a href="/projects/project2.html" class="project__div--btn shadow">More Details</a>
+                </div>
+              </div>
 
-        <!-- project item 02 -->
-        <div class="project__item">
-          <a href="https://ntfpreviewcardchallenge-harshjohn.netlify.app/" target="_blank">
-            <img class="project__img" src="images/Screen-Shot-1440.png" alt="NFT Preview Card Challenge image">
-          </a>
-        </div>
+              <div class=" container-fluid my-4 card-border-radius shadow text-center">
+                    <div class="container div__project--width">
+                        <img src="/images/project-images/desktop-view/tech-doc.png" class="rounded mx-auto d-block project-item shadow" alt="Project Item 3">
+                    </div>
+                    <div class="container div__project--width">
+                        <h4 class="project__div--title fs-5 text-dark">
+                            Technical Documentation Page
+                    </h4>
+                    <p class="project__div--description text-secondary">
+                        This is the project which troubled me a lot. I had to upgrade my skill of <span class="div__span--darker-color"><q>Googling</q></span>. This was a part of <span class="div__span--darker-color"><a class="div__span--darker-color" href="freecodecamp.org"><q>freeCodeCamp.org's</q></a></span>, Responsive Web Design Certification course.
+                    </p>
+                <a href="/projects/project3.html" class="project__div--btn shadow">More Details</a>
+              </div>
+              </div>
 
-        <!-- project item 03 -->
-        <div class="project__item">
-          <a href="https://ordersummarycardchallenge-front-end-mentor-harshjohn.netlify.app/" target="_blank">
-            <img class="project__img" src="images/Screen Shot 2022-03-13 at 00.34.44.png" alt="img of order summary card">
-          </a>
-        </div>
+              <div class=" container-fluid my-4 card-border-radius shadow text-center">
+                      <div class="container div__project--width">
+                          <img src="/images/project-images/desktop-view/product-landing-page.png" class="rounded mx-auto d-block project-item shadow" alt="Project Item 4">
+                          </div>
+                          <div class="container div__project--width">
+                      <h4 class="project__div--title fs-5 text-dark">
+                          Product Landing Page
+                        </h4>
+                        <p class="project__div--description text-secondary">
+                            This was the project where I started to really understand, how HTML and CSS works. This was also a part of <span class="div__span--darker-color"><a class="div__span--darker-color" href="freecodecamp.org"><q>freeCodeCamp.org's</q></a></span>, Responsive Web Design Certification course.
+                        </p>
+                    <a href="/projects/project4.html" class="project__div--btn shadow">More Details</a>
+                 </div>
+                </div>
+              </div>
+            </section>
 
-        <!-- project item 04 -->
-        <div class="project__item">
-          <a href="https://stats-preview-card-component-solution-by-harshjohn.netlify.app/" target="_blank">
-            <img class="project__img" src="images/Screen Shot 2022-03-14 at 00.18.28.png" alt="img of stats preview card component solution">
-          </a>
-        </div>
+            <!-- Hiring -->
+            <section class="container my-2 mb-0 p-2">
+                <h2 id="hiring" class="text-center">Hiring</h2>
+              <p class="container text-center about--general text-secondary">
+                I’m always looking for new <strong><em class="text-black">opportunities</em></strong>.
+                <br>
+                If you are interested in acquiring my services along with little bit to jamming session on my <q>Guitar</q>, here's are some buttons.
+                <br>
+                They will guide you to my <q><a class="text-dark fw-bold font-monospace" href="/resume.html">Resume</a></q><!-- <span class="font-size-half">(you can get the pdf here)</span> <span class="font-size-small">(I would recommend visiting the website first!!)</span>-->, my <q><a class="text-dark fw-bold font-monospace" href="https://www.linkedin.com/in/harsh-john-105904234/?trk=public_profile_samename-profile&originalSubdomain=in">Linkedin</a></q> Profile, and my <q><a class="text-dark fw-bold font-monospace" href="https://github.com/HarshJohn">GitHub</a></q> Repositories.
+                <br>
+                or
+                <br>
+                You can Email me at:&nbsp;
+                    <a href="workharshjohn@gmail.com" class="p__email--link">workharshjohn@gmail.com</a>
+                    </p>
+            </section>
 
-        <!-- project item 05 -->
-        <div class="project__item">
-          <a href="https://survey-form-harshjohn.netlify.app/" target="_blank">
-            <img class="project__img" src="images/Screen Shot 2022-03-14 at 00.59.59.png" alt="img of survey form page">
-          </a>
-        </div>
-
-        <!-- project item 06 -->
-        <div class="project__item">
-          <a href="https://productlandingpage-harshjohn.netlify.app/" target="_blank">
-            <img class="project__img" src="images/product-landing-page.png" alt="img of product landing page">
-          </a>
-        </div>
-
-        <!-- project item 07 -->
-        <div class="project__item">
-          <a href="https://technical-docementation-page-harshjohn.netlify.app/" target="_blank">
-            <img class="project__img" src="images/tech-doc.png" alt="Image of Technical Documentation Page">
-          </a>
-        </div>
-
-        <!-- project item 08 -->
-        <div class="project__item">
-          <a href="https://3-column-preview-card-component-solution-harshjohn.netlify.app/" target="_blank">
-            <img class="project__img" src="images/3columncard.png" alt="Image of 3 Column Preview Card Page">
-          </a>
-        </div>
-      </project>
-
+      </main>
     </section>
 
-    <!-- my email address -->
-    <section id="contact" class="my-contact section">
-      <div>
-          <p class="section__title--contact">
-            Interested in collaborating?
-        </p>
-        <p class="section__subtitle--contact">
-            I’m always open to discussing product design work or partnership opportunities.
-     </p>
-     <div>
-         <a href="workharshjohn@gmail.com" class="section__contact--link">workharshjohn@gmail.com</a>
-     </div>
-      </div>
+    <!-- footer -->
+      <footer class="footer-container">
+          <div id="footer">
+          <section class="footer-social">
+          <!-- social icons -->
+          <div class="footer__div--social-icons">
+              <span class="div__social--header fs-3 fw-bold">Social</span>
+              <ul class="social-list">
+              <li class="social-list__item"><a id="profile-link" target="_blank" href="https://github.com/HarshJohn" class="social-list__link"><i class="fa-brands fa-github"></i></a></li>
+        
+              <li class="social-list__item"><a href="https://www.freecodecamp.org/HarshJ_ohn" class="social-list__link" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a></li>
+        
+              <li class="social-list__item"><a href="https://twitter.com/harshj_ohn" class="social-list__link" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        
+              <li class="social-list__item"><a href="https://www.linkedin.com/in/harsh-john-105904234/?trk=public_profile_samename-profile&originalSubdomain=in" class="social-list__link" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        
+              <li class="social-list__item">
+                <a href="https://wa.me/+918085837063" class="social-list__link" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+            </ul>
+        </div>
+    </section>
 
-      <p class="quote">
-        Living, learning, & leveling up one day at a time.
-      </p>
-
-      <div class="ul">
-    <ul class="social-list">
-      <li class="social-list__item"><a id="profile-link" target="_blank" href="https://github.com/HarshJohn" class="social-list__link"><i class="fa-brands fa-github"></i></a></li>
-
-      <li class="social-list__item"><a href="https://www.freecodecamp.org/HarshJ_ohn" class="social-list__link" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a></li>
-
-      <li class="social-list__item"><a href="https://twitter.com/harshj_ohn" class="social-list__link" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-
-      <li class="social-list__item"><a href="https://www.instagram.com/harshj_ohn/" class="social-list__link" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-
-      <li class="social-list__item">
-        <a href="https://www.facebook.com/hjohn0/" class="social-list__link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-      </li>
-    </ul>
+    <section class="container footer__section--harsh-john pt-2">
+        <div class="container text-light">
+            <h3 class="text-start text-uppercase fs-4 font-monospace text-primary">harsh john</h3>
+            <p class="section__harsh--content font-monospace">
+                A self-taught Frontend Web Developer building the Frontend of the Websites and trying to make them look great.
+            </p>
+        </div>
+    </section>
 </div>
 
-</section>
+    <hr>
 
-</main>
+    <section class="container copyright-info py-3 text-center">
+        <div class="copyright font-monospace">
+            Handcrafted with &#10084;&#65039; by <a href="" class="fw-bold text-decoration-underline text-primary">Harsh John</a> <span class="copyright--sign">&copy;</span> Twenty-Twenty-Two
+        </div>
+    </section>    
+      </footer>
 
-<footer>
 
-    <div class="copyright">
-        Handcrafted by me <span class="copyright--sign">&copy;</span> Twenty-Twenty-Two
-    </div>
-
-</footer>
+    <!-- importing javaScript from bootstrap even though I don't know what it is at this moment ;) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
-
 </html>

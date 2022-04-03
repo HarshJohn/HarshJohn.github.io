@@ -1,0 +1,172 @@
+/* custom styles */
+:root {
+    --ff-reg: 'Roboto', sans-serif;
+    --ff-monospace: 'Roboto Mono', monospace;
+
+    --fw-bolder: 900;
+    --fw-bold: 700;
+    --fw-reg: 400;
+}
+
+/* general styles */
+body {
+    font-family: var(--ff-reg);
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: var(--fw-bold);
+}
+
+.div__span--darker-color {
+    font-weight: 600;
+    color: rgb(117, 117, 117);
+}
+
+
+/* Navigation Bar */
+#navbar {
+    width: 100%;
+    z-index: 99;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/* footer */
+.footer-container {
+    background-color: black;
+    width: 100%;
+    padding: 1em;
+    margin: 0 auto;
+}
+.footer-social {
+    background-color: black;
+    margin-bottom: 0;
+    position: relative;
+    bottom: auto;
+    text-align: left;
+}
+
+    /* social icons */
+.footer__div--social-icons {
+    color: white;
+}
+
+.div__social--header {
+    padding-left: 1.40em;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+}
+
+.fa-brands {
+    color: lightgray;
+    margin-inline: 1em;
+}
+
+    /* footer harsh-john */
+.footer__section--harsh-john {
+    padding-left: 1.40em;
+}
+
+.footer__section--harsh-john h3 {
+    letter-spacing: 3px;
+}
+
+.section__harsh--content {
+    font-family: sans-serif;
+    color: lightgray;
+}
+
+hr {
+    color: white;
+}
+
+    /* copyright */
+.copyright {
+    color: white;
+    font-size: small;
+}
+
+@media (min-width: 576px) {
+    #footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.footer__div--social-icons-fixed {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .footer__div--social-icons {
+        display: none;
+    }
+
+    .footer__section--harsh-john {
+        width: 850px;
+    }
+
+    .footer__div--social-icons-fixed {
+        display: block;
+        position: fixed;
+        top: 18%;
+        left: 0%;
+        margin: 0;
+        padding: 0;
+        padding-top: 1em;
+        padding-right: .5em;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.32);
+    }
+
+    .social-list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        padding-left: .15em;
+    }
+
+    .fa-brands {
+        background-color: black;
+        color: white;
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+        padding: 5px;
+        margin-bottom: .5em;
+        border-radius: 5px;
+    }
+
+    .fa-twitter {
+        background-color: #F5F8FA;
+        color: #1DA1F2;
+    }
+
+    .fa-whatsapp {
+        background-color: #25D366;
+    }
+
+    .fa-linkedin-in {
+        background-color: #0e76a8;
+    }
+}
