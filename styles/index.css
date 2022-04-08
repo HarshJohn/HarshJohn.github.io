@@ -22,9 +22,35 @@ body {
     padding: 0;
 }
 
+.body {
+    width: 300px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .body {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .body {
+        width: 650px;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 992px) {
     .body {
         width: 850px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .body {
+        width: 1150px;
         margin: 0 auto;
     }
 }
@@ -43,8 +69,8 @@ h2 {
     margin: 0 auto;
     margin-top: 8rem;
     margin-bottom: 2em;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
     border-radius: 5px;
 }
 
@@ -77,6 +103,15 @@ header a {
 }
 
 @media (min-width: 992px) {
+    .header__img--container {
+        display: inline-block;
+        position: relative;
+        padding-right: 1em;
+        left: 12%;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
     .header__section--head {
         display: flex;
         justify-content: space-around;
@@ -93,10 +128,7 @@ header a {
     }
 
     .header__img--container {
-        display: inline-block;
-        position: relative;
-        padding-right: 1em;
-        left: 12%;
+        
     }
 
     .header-img {
@@ -145,6 +177,7 @@ header a {
 }
 
 .about--general {
+    margin: 0 auto;
     margin-top: 2.5em;
 }
 
@@ -159,10 +192,16 @@ header a {
 
     /* project section */
 #project {
-    position: relative;
+    width: 300px;
+    margin: 0 auto  ;
 }
 
-#project::after {
+.project__heading {
+    position: relative;
+    margin: 0 auto;
+}
+
+.project__heading::after {
     display: block;
     content: "";
     width: 1em;
@@ -175,30 +214,39 @@ header a {
     margin-top: .75em;
 }
 
-#project div {
-    width: 300px;
+.project-about {
+    margin-left: -10px;
 }
 
-.card-border-radius {
-    border-radius: 10px;
-    width: 350px;
-    padding: 1em;
-    padding-bottom: .25em;
-}
-
-.project__div--title {
-    font-weight: 600;
-    padding-top: 2em;
-    padding-bottom: 1em;
+.main__div--project-container {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .div__project--width {
-    width: 300px;   
+    width: 250px;
+    margin: 0 auto;
+    margin-left: -10px;
+    padding: 1em;
+}
+
+.div__project--img-width {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: -5px;
+    width: 230px;
 }
 
 .project-item {
-    max-width: 100%;
+    width: 100%;
+}
+
+.project__div--title {
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .project__div--btn {
@@ -206,9 +254,31 @@ header a {
     text-decoration: none;
     color: black;
     background-color: gold;
-    margin: 2em;
-    padding: 1em 2em;
+    margin: 1em;
+    margin-bottom: 1em;
+    padding: .5em 1em;
     border-radius: 5px;
+}
+
+@media (min-width: 576px) {
+    #project {
+        width: 450px;
+    }
+
+    .main__div--project-container {
+        width: 440px;
+    }
+
+    .div__project--width {
+        width: 420px;
+        margin-left: -10px;
+    }
+    
+    .div__project--img-width {
+        width: 400px;
+        margin-bottom: 2em;
+        margin-left: -5px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -219,9 +289,10 @@ header a {
         grid-template-columns: 1fr 1fr;
     }
 
-    .card-border-radius {
-        width: 450px;
+    .div__project--width {
+        margin-left: 2em;
     }
+    
 }
 
     /* hiring section */

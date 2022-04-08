@@ -8,6 +8,20 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 576px) {
+    .body {
+        max-width: 520px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        max-width: 720px;
+        width: 550px;
+    }
+}
+
 /* header style */
 header {
     margin: 0 auto;
@@ -64,6 +78,28 @@ header {
     color: rgba(0, 0, 0, .8);
 }
 
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        max-width: 515;
+        width: 315;
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        max-width: 715;
+        width: 550;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
 /* main style */
 .span__about--me {
     display: inline-block;
@@ -87,4 +123,23 @@ header {
     display: inline-block;
     margin-right: 1em;
     padding-inline: 1em;
+}
+
+@media (max-width: 576px) {
+    .main {
+        flex-direction: column;
+        width: 315;
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        width: 550;
+        margin: 0;
+        padding: 0;
+    }
 }
