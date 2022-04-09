@@ -16,6 +16,7 @@ body {
 
 .body {
     margin-top: 2em;
+    padding: 1em;
     padding-bottom: 2em;
 }
 
@@ -52,8 +53,9 @@ h3 {
 .footer-container {
     background-color: black;
     width: 100vw;
-    padding: 1em;
+    margin: 0;
     margin: 0 auto;
+    padding: 1em;
 }
 .footer-social {
     background-color: black;
