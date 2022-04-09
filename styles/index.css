@@ -59,11 +59,6 @@ body {
     padding: 1em;
 }
 
-h2 {
-    text-decoration: underline;
-    text-decoration-color: rgba(0, 0, 0, .1);
-}
-
 /* header area */
 .header__img--container {
     margin: 0 auto;
